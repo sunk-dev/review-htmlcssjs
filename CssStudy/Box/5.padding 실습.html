@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .card{
+            width: 250px;
+            height: 350px;
+            border: 2px solid gray;
+            margin: 50px auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px 5px #999;
+
+        }
+        .card .album{
+            height: 250px;
+            /* background: gray; */
+
+        }
+        .card .album img{
+            /* 사진 사이즈를 맞출때 사용 
+            width:100%로 
+            주의: 세로지정할시 사진 비율파괴, 한쪽만 설정하기(보통가로만 설정함.)*/
+            width: 100%;
+        }
+        
+        .card .content{
+            /* border: 2px solid #000; */
+            padding: 20px 7px;
+            background: rgba(180,180,180,0.8);
+            text-align: center;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="album">
+            <img src="../../img/wallpaper.jpg" alt="프로필사진">
+        </div>
+        <p class="content">파워퍼프걸</p>
+    </div>
+    
+</body>
+</html>

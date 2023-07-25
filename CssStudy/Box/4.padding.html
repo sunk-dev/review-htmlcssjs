@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            background: orange;
+            margin-left: 100px;
+            padding-top: 50px;
+            padding-left: 50px;
+            /* padding 주의점 
+            :padding 픽셀크기만큼 box크기가 늘어남. */
+            /*box-sizing: border-box;->padding 이나 border 로인해 박스다 커지는 것을 방지  */
+           
+
+
+        }
+        .box{
+            width: 50%;
+            height: 50%;
+            background: tomato;
+            font-size: 2em;
+            color: white;
+            /* 중첩된 박스에서 margin을 주면
+            부모랑 자식이 같이 이동됨 */
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">안녕안녕</div>
+    </div>
+</body>
+</html>
