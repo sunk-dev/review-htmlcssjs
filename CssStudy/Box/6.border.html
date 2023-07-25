@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            margin-top: 100px;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            background: gray;
+            /* box-sizing: border-box; */
+            margin: 10px auto 0;
+
+        }
+        .box1{
+            background: tomato;
+            /* border 박스의 크기를 좌우함.
+             box-sizing: border-box; 필요*/
+            /* 선의 굵기
+            border-width: 10px;
+            선의 모양
+            border-style: solid;
+            선의 색깔
+            border-color: orange; */
+            border: 4px solid orange;
+            border-top-color: yellow;
+        }
+        .box2{
+            background: purple;
+            border: 4px darkblue dashed;
+        }
+        .box3{
+            background: green;
+            /* 위치마다 개별 지정가능 */
+            border-bottom: 4px skyblue double;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+
+</body>
+</html>
