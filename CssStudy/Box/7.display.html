@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hello{
+            background: red;
+            width: 300px;
+            height: 200px;
+            margin-top: 30px;
+            padding-top: 30px;
+            display: block;
+        }
+        .box{
+            margin-top: 50px;
+        }
+        .box input {
+            /* input 은 기본적으로 inline-block속성 */
+            height: 40px;
+            display: block;
+        }
+        .box input:nth-child(3){
+            /* display: none; -> 사라지게 하는 속성 공간도 사라짐*/
+            /* opacity 투명도조절 0->1로 갈수록 불투명해짐 공간은 사라지지 않는다.*/
+            /* opacity: 0; */
+            /*  visibility: hidden; 공간은 유지하지만 보이지않음. */
+            visibility: hidden;
+            
+        }
+    </style>
+</head>
+<body>
+    <span id="hello">안녕하세요</span>
+
+
+    <div class="box">
+        <input type="text " value="1">
+        <input type="text " value="2">
+        <input type="text " value="3">
+        <input type="text " value="4">
+        <input type="text " value="5">
+    </div>
+    
+</body>
+</html>
