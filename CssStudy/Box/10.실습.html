@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        section{
+            width: 550px;
+            border: 2px double #123456;
+        }
+        section .title{
+            width: 100%;
+            border-bottom: 3px solid #000;
+            padding: 20px;
+            text-align: center;
+            font-weight: 700;
+            background: #abcdef;
+        }
+        section .content{
+            
+            width: 100%;
+            padding: 15px;
+        }
+        /* 작동방식
+        1. section 3. .content:2.nth-child(2)
+        1.section의 후손중에서
+        2. .content의 형제 중에서 .content가 .nth-child(2)두번째가 맞는가? */
+        section .content:nth-child(2){
+            border-bottom: 2px dashed #000;
+        }
+        section .content h2{
+            font-weight: 700;
+            font-size: 17px;
+            padding: 10px 0;
+        }
+        section .content p{
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1 class="title">속 담 풀 이</h1>
+        <div class="big-content">
+            <p class="ttt"></p>
+            <div class="content">
+                <h2>말 한마디에 천냥 빚진다.</h2>
+                <p>생각해보지 않고 나오는 대로 말하다가 실수하면 상대의 마음에 아픔을 남기게 된다.</p>
+            </div>
+            <div class="content">
+                <h2>웃는 얼굴에 침 못 뱉는다.</h2>
+                <p>호의적인 의사소통 방법은 자기 말만 하는 것보다 좋은 결과로 이어진다.</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
