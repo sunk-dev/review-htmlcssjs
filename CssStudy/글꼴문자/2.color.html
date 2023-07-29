@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 30px;
+        }
+        .c1{
+            /* ★ 똑같은 yellow 를 지정해도 브라우저마다 기본 값이 다르기 때문에 
+            원하는 색을 넣기 위해서는 ※꼭 색상코드를 지정※하여 입력해야한다!!★ */
+            /* 색상 입력방법 1.컬러코드 */
+            color: #000;
+        }
+        .c2{
+            /* 색상입력방법 
+            2. rgba -> r,g,b 각각 0-255까지의 값 지정가능, 255로 갈수록 채도 높아짐
+             a:투명도 0-1까지 조절가능 1로 갈수록 불투명*/
+            color: rgb(100, 0, 0);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="c1">hello programming!</div>
+    <div class="c2">hello programming!</div>
+    <div class="c3">hello programming!</div>
+</body>
+</html>
