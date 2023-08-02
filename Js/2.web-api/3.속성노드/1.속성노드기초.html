@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 
+    attribute : 속성
+    html요소는 여러개의 속성을 가짐
+    문서가 파싱될 때 HTML 요소의 속성은 어트리뷰트 노드로 변환되어 요소 노드의 형제 노드로 추가됨
+    속성 하나당 하나의 어트리뷰트 노드가 생성
+    어트리뷰트 노드의 참조는 유사 배열 객체인 NamedNodeMap 객체에 담겨서 요소 노드의
+attributes 프로퍼티에 저장됨
+   -->
+  <input type="email" id="account" value="abc@def.com">
+
+  <script>
+    const $input=document.querySelector('input');
+    console.log($input.attributes[1].value);
+    let input, type, id, value;
+
+    // $input.attributes.type.value="radio";
+    $input.attributes.value.value='h1'
+    type = {
+      name: 'type',
+      value: 'email'
+    };
+    id = {
+      name: 'id',
+      value: 'account'
+    };
+    value = {
+      name: 'value',
+      value: 'abc@def.com'
+    };
+
+    // 유사배열 NamedNodeMap
+    const attributes = {
+      0: type,
+      1: id,
+      2: value,
+      length: 3,
+      type: type,
+      id: id,
+      value: value
+    };
+    
+    input = {
+      tagName: 'INPUT',
+      attributes: attributes
+    };
+
+  </script>
+</body>
+</html>
