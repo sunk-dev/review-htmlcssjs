@@ -79,9 +79,17 @@ const allTradersName=traders
 
 // 연습 5: 서울에 사는 거래자의 모든 거래액의 총합 출력.
 
-let totalTradePriceSeoul=0;
-traders
+// let totalTradePriceSeoul=0;
+// traders
+// .filter(trs=>trs.trader.city==='서울')
+// .map(trs=>trs.value)
+// .forEach(val=>totalTradePriceSeoul+=val);
+// console.log(totalTradePriceSeoul);
+
+// reduce함수 : 배열을 반복해서 각 요소에 콜백함수를 적용한
+//              결과를 누적하는 함수
+
+const total=traders
 .filter(trs=>trs.trader.city==='서울')
-.map(trs=>trs.value)
-.forEach(val=>totalTradePriceSeoul+=val);
-console.log(totalTradePriceSeoul);
+.reduce((acc,curr)=>acc+curr.value,0);
+console.log(`거래총액 ${total}원`);
