@@ -28,3 +28,4 @@ const copyEmp={
 };
 copyEmp.empName='루피';
 console.log(copyEmp);
+
